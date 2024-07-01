@@ -15,7 +15,7 @@
     <script>
       function addtodo() {
         const inputValue = document.getElementById("input").value;
-        //create new element <li>
+   
         let newElement = document.createElement("li"); //<li></li>
         newElement.classList.add("list-group-item"); //<li class="list-group-item"></li>
         let newTxtElement = document.createTextNode(inputValue); //create Text
@@ -24,13 +24,19 @@
         let listElement = document.getElementById("listtodo");
         listElement.appendChild(newElement);
 
-        // Clear input field after adding
+
         document.getElementById("input").value = "";
+
+
+
       }
       function deleteAllTodos() {
         let listElement = document.getElementById("listtodo");
         listElement.innerHTML = "";
       }
+
+
+      
     </script>
     
     <div class="container">
@@ -54,6 +60,9 @@
             >
               +
             </button>
+
+
+
             <button
             class="btn btn-danger ms-2"
             type="button"
@@ -61,6 +70,11 @@
           >
             Delete All
           </button>
+
+
+
+
+
           </div>
         </div>
         <div class="col col-md-8 col-sm-12">
